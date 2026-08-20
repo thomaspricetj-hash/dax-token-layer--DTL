@@ -1,0 +1,24 @@
+[package]
+name = "dax-core"
+version = "0.1.0"
+edition = "2021"
+license = "evaluation"
+authors = ["thomas"]
+description = "DAX tokenization + delta layer for SyntheticMind"
+
+[lib]
+name = "dax_core"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+thiserror = "1.0"
+flate2 = "1.0"
+byteorder = "1.5"
+
+# Your real BitDrop v2 compressor crate
+bitdrop_v2 = { path = "../bitdrop_v2" }
+
+[dev-dependencies]
+serde_json = "1.0"

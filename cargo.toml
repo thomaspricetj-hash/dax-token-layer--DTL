@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "dax-core",
+    "bench",
+    "bitdrop_v2"   
+]
